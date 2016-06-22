@@ -15,10 +15,13 @@ $dom->preserveWhiteSpace = false;
 $dom->load(__DIR__ . '/../xml/productNS.xml');
 
 $xp = new DOMXPath($dom);
-$xp->registerNamespace('', 'http://competec.ch/product');
+$xp->registerNamespace('foo', 'http://competec.ch/product');
 
 $counter = '1';
 foreach($xp->query('//foo:*') as $element) {
+    /**
+     * @var $element DOMElement
+     */
     $element->setAttribute('visited', (string)$counter);
     $counter++;
 }

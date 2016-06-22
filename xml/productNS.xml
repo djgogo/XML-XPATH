@@ -1,11 +1,10 @@
 <?xml version="1.0" encoding="utf-8" ?>
-<foo:product xmlns:foo="http://competec.ch/product" sku="12345" name="Projektor">
+<product xmlns="http://competec.ch/product" sku="12345" name="Projektor">
 
-    <foo:categories>
-       <foo:categoryy id="12"/>
-    </foo:categories>
+    <categories>
+       <category id="12"/>
+    </categories>
 
-    <foo:description type="short">Kurzbeschreibung</foo:description>
-    <foo:description type="full">Beschreibung</foo:description>
-
-</foo:product>
+    <description type="short">Kurzbeschreibung</description>
+    <description type="full">Beschreibung</description>
+</product>
